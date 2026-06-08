@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-outer{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(48, 46, 46);
+    display: flex;
+}
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background-color: #1E293B;
+    transition: 0.3s ease-in-out;
+}
+.close{
+    width: 90px;
+}
+
+.sidebar.close .sidebar-tabs span{
+    display: none;
+    
+}
+
+.sidebar.close .sidebar-tabs,.sidebar.close .sidebar-logo,.sidebar.close .sidebar-logout {
+    padding: 5px;
+}
+
+.sidebar.close .sidebar-logo span{
+    display: none;
+    
+}
+
+.sidebar.close .sidebar-logout span{
+    display: none;
+    
+}
+
+.sidebar-logo{
+    height: 63px;
+   color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    font-size: 25px;
+}
+.logo-icon{
+    height: 40px;
+    width: 40px;
+
+    background: linear-gradient(65deg,blue,green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.sidebar-tabs{
+    display: flex;
+    
+    flex-direction : column;
+    padding: 40px 30px;
+    gap : 10px
+}
+.sidebar-tab-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color : white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    &:hover{
+    background: linear-gradient(to right,blue,green);
+}
+}
+
+.sidebar-tab-name.active{
+  background: linear-gradient(to right,blue,green)
+}
+
+
+.sidebar-logout{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    bottom: 0;
+    padding: 20px 35px;
+    border-top: 1px solid white;
+}
+.sidebar-logout-name{
+     display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient( 65deg ,blue,blue,green);
+    border-radius: 8px;
+}
+.main{
+    flex: 1;
+    height: 100vh;
+    background-color: aqua;
+   display: flex;
+   flex-direction: column;
+}
+
+.dashboard-header{
+    height: 70px;
+    background-color: white;
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: monospace;
+}
+
+.dashboard-content{
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgb(236, 230, 230);
+    padding: 50px;
+    text-align: justify;
+    color: white;
+    font-family: cursive;
+}
+.dashboard-header-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-header-left > button {
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #F0F0F0;
+        border-radius: 8px;
+    }
+}
+
+.dashboard-admin-outer{
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+  
+   border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    &:hover{
+         background-color: rgb(226, 218, 218);
+    }
+}
+
+.admin{
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    background: linear-gradient(65deg,blue,green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-dropdown > p{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.admin-dropdown > span {
+    color: gray;
+}
+
+
+
+
+
