@@ -2,7 +2,7 @@ import React from 'react'
 import DashboardLayout from '../Components/DashboardLayout'
 import { useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
-
+import axios from 'axios'
 const Dashboard = () => {
      const token = localStorage.getItem('token')
      const navigate = useNavigate()
@@ -10,10 +10,10 @@ const Dashboard = () => {
      const verifyToken = async ()=>{
         try{
 
-            const res = await axios.get(`${api_url}/api/user/check-toke`,
+            const res = await axios.get(`${api_url}/api/user/check-token`,
                 {
                     headers : {
-                        Authorization : `{token}`
+                        Authorization : `${token}`
                     }
                 }
             )
