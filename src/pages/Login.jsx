@@ -16,7 +16,9 @@ const Login = () => {
             const res = await axios.post(`${api_url}/api/user/login`,formData)
             console.log(res)
             if(res.status==200){
+
                 localStorage.setItem('token',res.data.token)
+                localStorage.setItem('userData',JSON.stringify(res.data.userData))
                 navigate('/dashboard')
                 alert('login Sucessfully')
                 setFormData({
