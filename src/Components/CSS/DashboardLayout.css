@@ -103,6 +103,7 @@
     padding: 10px 20px;
     background: linear-gradient( 65deg ,blue,blue,green);
     border-radius: 8px;
+    cursor: pointer;
 }
 .main{
     flex: 1;

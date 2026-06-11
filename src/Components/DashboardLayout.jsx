@@ -103,7 +103,7 @@ const DashboardLayout = ({children}) => {
               <div className="sidebar-logout">
                        <div
                        onClick={handleLogOut}
-                        className='sidebar-logout-name cursor-pointer '> <LogOut /> <span>LogOut</span></div>
+                        className='sidebar-logout-name  '> <LogOut /> <span>LogOut</span></div>
               </div>
          </div>
          <div className="main">
